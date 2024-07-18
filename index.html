@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>НС Строй</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <script src="static/js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/ns-logo.png">
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <nav class="nav-info">
+                <a class="nav-info-link" href="https://www.google.com/maps/place/%D0%9F%D0%BB%D0%B5%D0%B2%D0%B5%D0%BD+%D0%A6%D0%B5%D0%BD%D1%82%D1%8A%D1%80,+%D1%83%D0%BB.+%D0%A6%D0%B0%D1%80+%D0%91%D0%BE%D1%80%D0%B8%D1%81+III+12,+5800+%D0%9F%D0%BB%D0%B5%D0%B2%D0%B5%D0%BD,+%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F/@43.411206,24.617866,16z/data=!4m6!3m5!1s0x40ab8b4d03b14cb7:0x7440b904fdbf92ec!8m2!3d43.4112085!4d24.6178999!16s%2Fg%2F11c1_gkgg6?hl=bg&entry=ttu">
+                    <img src="Images/location.png" alt="ns build location">
+                    <span>Плевен ул. „Цар Борис III“ 12</span>
+                </a>
+                <a class="nav-info-link" href="mailto:info@nsbuild.eu">
+                    <img src="Images/email.png" alt="ns build email">
+                    <span>info@nsbuild.eu</span>
+                </a>
+                <a class="nav-info-link">
+                    <img src="Images/clock.png" alt="ns build working hours">
+                    <span>9:00 AM - 18:00 PM</span>
+                </a>
+                <a class="nav-info-link" href="tel:087 771 7700">
+                    <img src="Images/telephone.png" alt="ns build phone">
+                    <span>087 771 7700</span>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61555637235665">
+                    <img src="Images/facebook.png" alt="ns build facebook">
+                </a>
+                <a href="https://www.instagram.com/ns_build2024/">
+                    <img src="Images/instagram.png" alt="ns build instagram">
+                </a>
+            </nav>
+            <nav class="nav-main">
+                <a href="#">
+                    <img class="logo" src="Images/ns-logo.png" alt="Ns Build Logo">
+                </a>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="index.html">НАЧАЛО</a></li>
+                    <li><a href="for-us.html">ЗА НАС</a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="dropbtn">УСЛУГИ</a>
+                        <div class="dropdown-content">
+                            <a href="web_design.html">ВиК</a>
+                            <a href="seo.html">Баня</a>
+                            <a href="marketing.html">Електро</a>
+                            <a href="marketing.html">Външна изолоция</a>
+                            <a href="marketing.html">Шпакловки</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="partners.html" class="dropbtn">ПАРТНЬОРИ</a>
+                        <div class="dropdown-content">
+                            <a href="web_design.html">Benjamin Moore</a>
+                            <a href="seo.html">Ламинати AGT</a>
+                            <a href="marketing.html">Brezza Di Colori</a>
+                            <a href="marketing.html">Dessa Decor</a>
+                            <a href="marketing.html">Картини от Стъкло</a>
+                            <a href="marketing.html">Brezza Di Colori</a>
+                            <a href="marketing.html">Стенни Профили от МДФ</a>
+                            <a href="marketing.html">3D Панели</a>
+                        </div>
+                    </li>
+                    <li><a href="prices.html">ЦЕНИ</a></li>
+                    <li><a href="projects.html">ПРОЕКТИ</a></li>
+                    <li><a href="blog.html">БЛОГ</a></li>
+                    <li><a href="contact.html">КОНТАКТИ</a></li>
+                </ul>
+            </nav>
+            
+            
+        </div>
+
+        <div class="image-main"> 
+            <img src="images/main-image.jpeg" alt="NS Stroi" id="mainImage">
+            <div class="image-text">
+                <h1>Експерти в стройтелната дейност</h1>
+                <p><strong>Изграждаме бъдещето, тухла по тухла.</strong></p>
+            </div>
+            <script>
+                window.onload = function() {
+            // Your JavaScript code here
+            // Select the img element
+            const mainImage = document.getElementById('mainImage');
+
+            // Function to change image source based on screen width
+            function changeMainImage() {
+                const screenWidth = window.innerWidth;
+                const mobileMaxWidth = 500; // Adjust as needed
+
+                if (screenWidth <= mobileMaxWidth) {
+                    mainImage.src = 'Images/main-image-v2.jpeg'; // Path to mobile image
+                } else {
+                    mainImage.src = 'Images/main-image.jpeg'; // Default image for larger screens
+                }
+            }
+
+            // Call the function initially to set the image based on current screen size
+            changeMainImage();
+
+            // Event listener to handle window resize
+            window.addEventListener('resize', changeMainImage);
+        };
+
+
+            </script>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <!-- Reviews -->
+            <h1>КАКВО КАЗВАТ КЛИЕНТИТЕ ЗА НАС</h1>
+            <div class="reviews-carousel">
+                    <div class="reviews">
+                        <div class="review">
+                            <div class="review-header">
+                                <img src="Images/p1.png" alt="Profile Picture">
+                                <div class="review-details">
+                                    <h2>Kaloian Marinovski</h2>
+                                    <span class="review-date">2024</span>
+                                    <div class="review-stars">
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-content">Страхотен професионализъм,страхотни материали и спазване на срокове.Изключително прецизни и взискателни към работата си.
+                                Работят с голяма страст.Бързина с максимално качество.</p>
+                        </div>
+            
+                        <div class="review">
+                            <div class="review-header">
+                                <img src="Images/p2.png" alt="Profile Picture">
+                                <div class="review-details">
+                                    <h2>Dimitar Kanchev</h2>
+                                    <span class="review-date">2024</span>
+                                    <div class="review-stars">
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-content">Коректност и професионализъм, могат да учат и добрите в занаята!</p>
+                        </div>
+            
+                        <div class="review">
+                            <div class="review-header">
+                                <img src="Images/p3.png" alt="Profile Picture">
+                                <div class="review-details">
+                                    <h2>Ивайло Николов</h2>
+                                    <span class="review-date">2024</span>
+                                    <div class="review-stars">
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-content">Много благодаря за добре свършената работа от екипът ви. Препоръчвам.</p>
+                        </div>
+
+                        <div class="review">
+                            <div class="review-header">
+                                <img src="Images/p4.png" alt="Profile Picture">
+                                <div class="review-details">
+                                    <h2>Dani Petkov</h2>
+                                    <span class="review-date">2024</span>
+                                    <div class="review-stars">
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-content">Топ коректна фирма , препоръчвам</p>
+                        </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer>
+        <div class="footer-content">
+            <div class="for-us">
+                <img class="logo" src="images/ns-logo-white.png" alt="NS Stroi Logo">
+                <p>Ние в НС Строй  се  гордеем с нашия ангажимент към съвършенство във всеки проект, който предприемаме с нашият екип от опитни професионалисти. </p>
+            </div>
+            
+            <div class="services">
+                <a href="services.html"><h3>УСЛУГИ</h3></a>
+                <ul>
+                    <li>ВиК</li>
+                    <li>Баня</li>
+                    <li>Електро</li>
+                    <li>Външна изолоция</li>
+                    <li>Шпакловки</li>
+                </ul>
+            </div>
+            
+            <div class="contact-info">
+                <h3>КОНТАКТИ</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.google.com/maps/place/%D0%9F%D0%BB%D0%B5%D0%B2%D0%B5%D0%BD+%D0%A6%D0%B5%D0%BD%D1%82%D1%8A%D1%80,+%D1%83%D0%BB.+%D0%A6%D0%B0%D1%80+%D0%91%D0%BE%D1%80%D0%B8%D1%81+III+12,+5800+%D0%9F%D0%BB%D0%B5%D0%B2%D0%B5%D0%BD,+%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F/@43.411206,24.617866,16z/data=!4m6!3m5!1s0x40ab8b4d03b14cb7:0x7440b904fdbf92ec!8m2!3d43.4112085!4d24.6178999!16s%2Fg%2F11c1_gkgg6?hl=bg&entry=ttu">
+                            <img src="Images/location.png" alt="Ns Stroi location">
+                            <p>Плевен ул. „Цар Борис III“ 12</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:087 771 7700">
+                            <img src="Images/telephone.png"alt="Ns Stroi  phone">
+                            <p>087 771 7700</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@nsbuild.eu">
+                            <img src="Images/email.png"alt="Ns Stroi mail">
+                            <p>info@nsbuild.eu</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=61555637235665">
+                            <img src="Images/facebook.png" alt="Ns Stroi facebook logo">
+                            <p>НС Строй</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/ns_build2024/">
+                            <img src="Images/instagram.png" alt="Ns Stroi instagram logo">
+                            <p>ns_build2024</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="working-time">
+                <h3>РАБОТНО ВРЕМЕ</h3>
+                <ul>
+                    <li>Понеделник: 9:00 – 18:00</li>
+                    <li>Вторник: 9:00 – 18:00</li>
+                    <li>Сряда: 9:00 – 18:00</li>
+                    <li>Четвъртък: 9:00 – 18:00</li>
+                    <li>Петък: 9:00 – 18:00</li>
+                    <li>Събота: Затворено</li>
+                    <li>Неделя: Затворено</li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>Всички права запазени.</p>
+            <div class="social-links">
+                <ul>
+                    <li><a href="tel:087 771 7700"><img src="Images/telephone.png"></a></li>
+                    <li><a href="mailto:info@nsbuild.eu"><img src="Images/email.png"></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61555637235665"><img src="Images/facebook.png"></a></li>
+                    <li><a href="https://www.instagram.com/ns_build2024/"><img src="Images/instagram.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

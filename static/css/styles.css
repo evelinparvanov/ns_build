@@ -1,0 +1,818 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+/* Info Nav Bar */
+.nav-info {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-info img {
+    height: 25px; /* Adjust the height of the location icon */
+}
+
+.nav-info-link {
+    display: inline-flex;
+    text-decoration: none; /* Removes underline from the link */
+    align-items: center;
+}
+
+.nav-info-link  img {
+    margin-right: 10px; /* Adjust margin between image and text */
+}
+
+.nav-info-link span {
+    font-size: 14px; /* Adjust font size as needed */
+    color:#fff;
+}
+
+.nav-info a, .nav-main a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+/* Main Nav Bar */
+.nav-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff;
+    height: 70px;
+    padding: 0 10px; /* Adjust padding as needed */
+    position: relative;
+}
+
+.nav-main .logo {
+    height: 50px; /* Adjust logo height */
+}
+
+.menu-toggle {
+    display: none; /* Hide menu toggle by default */
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px;
+    background-color: transparent;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #FF6600; /* Highlight color */
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Dropdown CSS */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    width: 200px; /* Adjust width as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%; /* Position the dropdown below the link */
+    min-height: calc(100px + 20px); /* Dynamic min-height calculation */
+    max-height: 400px; /* Adjust max-height to make dropdown taller */
+    overflow-y: auto; /* Add scroll if content exceeds max-height */
+    transition: max-height 0.3s ease; /* Add transition */
+    margin-top: 5%;
+}`
+
+.dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Media query for screens up to 768px */
+
+
+
+/* Main Image*/
+
+.image-main {
+    position: relative;
+}
+
+.image-main img {
+    height: auto; /* Adjust the height as needed */
+    max-width: 100%; /* Maintain aspect ratio */
+    display: block; /* Remove inline-block spacing issue */
+    margin: 0 auto; /* Center the image if needed */
+}
+
+.image-text {
+    position: absolute;
+    top: 15%;
+    padding: 10px;
+    margin: 0 0 0 5%;
+}
+
+.image-text  h1{
+    font-size:35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 3%;
+    color: #000;
+    text-align: center;
+}
+
+.image-text p {
+    font-size: 20px;
+    color: #333333;
+    text-align: center;
+}
+
+/* Footer */
+
+:root {
+    --footer-background-color: rgb(0, 0, 0);
+}
+:root {
+    --copyright-background-color: rgb(0, 0, 0);
+}
+
+
+footer {
+    background-color: var(--footer-background-color);
+    height: fit-content;
+    color: rgb(0, 0, 0);
+    padding: 20px 0 0 0;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-content {
+    background-color: var(--footer-background-color);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: 300px;
+    margin: 20px 0 20px 0;
+}
+
+.footer-content div,
+.footer-content h3,
+.footer-content ul,
+.footer-content ul li,
+.footer-content ul li a,
+.footer-content img,
+.footer-content p {
+    background-color: var(--footer-background-color);
+    color: #888888;
+}
+
+.copyright,
+.copyright p,
+.social-links,
+.social-links ul,
+.social-links ul li,
+.social-links ul li a,
+.social-links img {
+    background-color: var(--copyright-background-color);
+    color: #888888;
+}
+
+.footer-content h3 {
+    font-size: 20px;
+    margin-bottom: 15%;
+    color: #333333;
+    text-decoration: none;
+    
+}
+
+.footer-content .for-us p {
+    font-size: 16px;
+    text-align: left;
+    text-wrap: wrap;
+    margin-top: 3%;
+}
+
+.footer-content .for-us img {
+    height: 70px;
+    margin: 10% 40px 10% 0;
+}
+
+.footer-content .working-time ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.footer-content .services {
+    margin-right: 5%;
+}
+ 
+.services a {
+    text-decoration: none;
+}
+
+.footer-content .services ul li{
+    margin-left: 70px;
+    text-align: left;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.footer-content img {
+    height: 120px;
+    margin-top: -20%;
+}
+.footer-content p {
+    max-width: 200px;
+    text-align: center;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-content ul li a:hover {
+    color: #c25f5f;
+}
+
+.footer-content .contact-info {
+    text-align: left; /* Align items to the left if necessary */
+}
+
+.footer-content .contact-info li {
+    margin-bottom: 10px; /* Adjust vertical spacing between items */
+    list-style: none; /* Remove default list styles */
+}
+
+.footer-content .contact-info img {
+    margin-top: 3px;
+    height: 25px;
+    margin-right: 10px; /* Adjust as needed */
+    vertical-align: middle; /* Align images vertically */
+    
+}
+
+.footer-content .contact-info p {
+    font-size: 16px;
+    margin: 5px 0 0 0;
+    display: inline; /* Ensure text is displayed inline */
+    vertical-align: middle; /* Align text vertically with image */
+}
+
+/* ----- Copyright -----*/
+.copyright {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+}
+
+.copyright p {
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 70%;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.social-links {
+    vertical-align: middle;
+    margin-top: 0px;
+    display: inline-block;
+}
+
+.social-links ul {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.social-links ul li a {
+    text-decoration: none;
+}
+
+.social-links img {
+    height: 25px;
+    vertical-align: middle;
+}
+
+
+/* Main */
+
+/* Reviews*/
+
+.main-content {
+    height: 100%;
+    margin: 5% 0;
+}
+
+.main-content h1 {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    text-align: center;
+    color: #0F4C75;
+    
+}
+
+.reviews-carousel {
+    display: flex;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-height: 500px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    
+}
+
+/* Container for reviews */
+.reviews {
+    display: flex;
+    text-wrap: wrap;
+    transition: transform 0.5s ease;
+    gap: 20px;
+    max-width: 1240px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+/* Individual review */
+.review {
+    scroll-snap-align: start;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px; /* Adjust minimum width as needed */
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+
+/* Header section of the review */
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.review-details {
+    flex: 1;
+}
+
+.review-details h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.review-date {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.review-stars {
+    font-size: 1.5em;
+    color: #f1c40f;
+}
+
+.star {
+    margin-right: 2px;
+}
+
+/* Review content */
+.review-content {
+    line-height: 1.5;
+}
+
+/* Contact Page */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 5% 0;
+    
+}
+
+.contact-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    max-height: 700px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contact-title {
+    color: #000;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+
+.contact-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-details h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #d84315;
+}
+
+.contact-details p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.contact-details .icon {
+    margin-right: 10px;
+}
+
+.contact-details a {
+    color: #d84315;
+    text-decoration: none;
+}
+
+.contact-details .working-hours {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.contact-details .working-hours .closed {
+    color: red;
+}
+
+.map-container {
+    width: 100%;
+    height: 450px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Responsive Css*/
+nav .fas {
+    display: none;
+}
+
+@media only screen and (max-width: 1600px){
+
+    .copyright ul li {
+        margin: 0 5px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 1300px){
+
+    .copyright p {
+        margin: auto auto;
+    }
+
+    .for-us {
+        display: none;
+    }
+
+    .footer-content {
+        display: space-evenly;
+        
+    }
+}
+
+
+/* Media query for screens up to 768px */
+@media (max-width: 768px) {
+
+    .nav-info {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block; /* Show menu toggle icon */
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: fixed; /* Fixed position to cover full viewport height */
+        top: 0;
+        right: 0;
+        width: 30%; /* Adjust width as needed */
+        height: 100vh; /* Full viewport height */
+        background-color: #ffffff;
+        box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000; /* Ensure menu is above other content */
+        padding: 20px;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-100%); /* Start off-screen */
+    }
+
+    nav ul.open {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle span {
+        background-color: #000;
+        transition: transform 0.3s ease;
+    }
+
+    .menu-toggle.open span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-toggle.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.open span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .dropdown-content {
+        position: static; /* Reset dropdown positioning */
+        display: none; /* Hide dropdowns initially */
+        max-height: none; /* Reset max-height */
+        overflow-y: visible; /* Reset overflow */
+        margin-top: 0; /* Reset margin */
+    }
+
+    nav ul li.dropdown:hover .dropdown-content {
+        display: none; /* Keep dropdowns hidden on hover */
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+
+    .nav-info {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: block; /* Show menu toggle icon */
+    }
+
+    #mainImage {
+        height: 500px;
+        width: 100%;/* Hide the original image on smaller screens */
+        filter:blur(3px);
+    }
+    .image-main h1 {
+        font-size: 24px;
+        text-wrap: wrap;
+        margin-top: -30px;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: fixed; /* Fixed position to cover full viewport height */
+        top: 0;
+        right: 0;
+        width: 60%; /* Adjust width as needed */
+        height: 100vh; /* Full viewport height */
+        background-color: #ffffff;
+        box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000; /* Ensure menu is above other content */
+        padding: 20px;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-100%); /* Start off-screen */
+    }
+    
+    nav ul.open {
+        display: flex;
+        transform: translateX(0);
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    .menu-toggle span {
+        background-color: #000;
+        transition: transform 0.3s ease;
+    }
+    
+    .menu-toggle.open span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .menu-toggle.open span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.open span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    .dropdown-content {
+        position: static; /* Reset dropdown positioning */
+        display: none; /* Hide dropdowns initially */
+        max-height: none; /* Reset max-height */
+        overflow-y: visible; /* Reset overflow */
+        margin-top: 0; /* Reset margin */
+    }
+    
+    nav ul li.dropdown:hover .dropdown-content {
+        display:none; /* Keep dropdowns hidden on hover */
+    }
+
+    .footer-content {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align items horizontally */
+    }
+
+    .for-us {
+        display: none;
+    }
+
+    .services p,
+    .contact-info p,
+    .working-time p {
+        text-align: center; /* Center-align <p> tags */
+        margin: 0; /* Remove default margins */
+    }
+
+    .services,
+    .contact-info,
+    .working-time,
+    .copyright {
+         /* Full width */
+        margin-bottom: 20px;
+         /* Add spacing between sections */
+        text-align: center;
+        align-items: center;
+        align-self: center;
+    }
+
+    .services h3,
+    .contact-info h3,
+    .working-time h3,
+    .copyright {
+         /* Full width */
+        margin-bottom: 20px;
+         /* Add spacing between sections */
+        text-align: center;
+        align-items: center;
+        align-self: center;
+    }
+
+    .services ul,
+    .contact-info ul,
+    .working-time ul {
+        padding-left: 0; /* Remove default padding */
+        list-style-type: none; /* Remove default list styles */
+        text-align: center; 
+        align-items: center;/* Reset text alignment for list items */
+    }
+
+    .services li,
+    .contact-info li,
+    .working-time li {
+        text-align: center; /* Center-align list items */
+        align-self: center;
+        align-items: center;
+    }
+}
+    
+
+
+  
+
+
+/* ScrollBar*/
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: rgba(82, 74, 117, 0.8); 
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5); 
+}
+
+::-moz-scrollbar-button, ::-webkit-scrollbar-button {
+  width: 0px;
+}
