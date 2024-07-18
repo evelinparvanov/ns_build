@@ -135,7 +135,7 @@ nav ul li a:hover::after {
     overflow-y: auto; /* Add scroll if content exceeds max-height */
     transition: max-height 0.3s ease; /* Add transition */
     margin-top: 5%;
-}`
+}
 
 .dropdown-content a {
     color: #000;
