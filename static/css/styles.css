@@ -241,8 +241,6 @@ nav ul li.dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Media query for screens up to 768px */
-
 
 /* ----- Home Page -----*/
 /* Main Image */
@@ -280,19 +278,168 @@ nav ul li.dropdown:hover .dropdown-content {
     text-align: center;
 }
 
+/*----- Main -----*/
+
+/* Reviews*/
+.reviews-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgb(235, 235, 235);
+}
+
+.review-title {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.reviews-carousel {
+    display: flex;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-height: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.reviews {
+    display: flex;
+    text-wrap: wrap;
+    transition: transform 0.5s ease;
+    gap: 20px;
+    max-width: 1240px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.review {
+    scroll-snap-align: start;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;   
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.review-details {
+    flex: 1;
+}
+
+.review-details h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.review-date {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.review-stars {
+    font-size: 1.5em;
+    color: #f1c40f;
+}
+
+.star {
+    margin-right: 2px;
+}
+
+.review-content {
+    line-height: 1.5;
+}
+
+/* Contact Us At Home Page */
+.contact-form {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-form .sub-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form-side form {
+    width: 100%;
+}
+
+.contact-form-side iframe {
+    padding: 10px;
+    width: 500px;
+    height: 600px;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #4d3f3f;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn.btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1e3a8a;
+    color: #000;
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#msg {
+    color: #61b252;
+    margin-top: -10px;
+    display: block;
+}
+
 /*----- About Us Page ----- */
-.about-us .image-main .small-main-image {
+.image-container .image-main .small-main-image {
     margin: 1% auto;
     height: 250px;
     width: 100%;
     filter: opacity(60%);
 }
 
-.about-us .image-main {
+.image-container .image-main {
     position: relative;
 }
 
-.about-us .image-text {
+.image-container .image-text {
     margin: 0;
     display: flex;
     justify-content: center;
@@ -305,7 +452,7 @@ nav ul li.dropdown:hover .dropdown-content {
     text-align: center;
 }
 
-.about-us .no-home-page-text {
+.image-container .no-home-page-text {
     margin: 0;
     color: black; /* Adjust color as needed */
     font-size: 50px; /* Adjust size as needed */
@@ -315,12 +462,12 @@ nav ul li.dropdown:hover .dropdown-content {
 /*----- Who Are We Section -----*/
 
 .about-us-main {
-    margin: -5% auto;
+    margin: 3% auto 0 auto;
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     min-height: 100vh;
-    max-height: fit-content; /* Ensure it takes up the full viewport height */
+    max-height: 150vh; 
 }
 
 
@@ -350,11 +497,13 @@ nav ul li.dropdown:hover .dropdown-content {
 }
 
 .about-us-main h2 {
-    color: #d32f2f;
+    margin: 15px auto;
+    color: #ee152b;
 }
 
 .about-us-main h1 {
-    color: #1e3a8a;
+    margin: 10px auto;
+    color: #000;
     font-size: 2em;
 }
 
@@ -382,7 +531,6 @@ nav ul li.dropdown:hover .dropdown-content {
     max-width: 100%;
     height: 500px;
     border-radius: 10px;
-    margin-bottom: 10px;
 }
 
 .about-us-main footer.contact-info {
@@ -402,15 +550,14 @@ nav ul li.dropdown:hover .dropdown-content {
 .about-content .image a {
     display: inline-flex; /* Aligns image and text horizontally */
     align-items: center; /* Centers items vertically */
-    margin: 10px; /* Space around each link */
+    margin: 15px; /* Space around each link */
     text-decoration: none; /* Remove underline from links */
-    color: inherit; /* Inherit text color from parent */
 }
 
 /* Style the images within the links */
 .about-content .image a img {
-    width: 24px; /* Adjust size of the icons */
-    height: 24px; /* Ensure icons are square */
+    width: 32px; /* Adjust size of the icons */
+    height: 32px; /* Ensure icons are square */
     margin-right: 8px; /* Space between image and text */
 }
 
@@ -423,6 +570,66 @@ nav ul li.dropdown:hover .dropdown-content {
 .about-content a:hover span {
     text-decoration: underline; /* Underline text on hover */
 }
+
+.footer-content .about {
+    margin-top: 20%;
+}
+
+/*----- Why Us Section -----*/
+
+.why-us  {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Aligns horizontally */
+    align-items: center; 
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.three-reasons-why-us  .about-us-title {
+    font-size: 32px;
+    color: #0F4C75;
+    margin: 5% auto;
+}
+
+.why-us .three-reasons-why-us h3 {
+    font-size: 22px;
+    margin: 3%;
+    color: #000;
+}
+
+
+.three-reasons-why-us .why-choose-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust spacing between items */
+}
+
+.why-choose-item img {
+    background-color: #f0e7e7;
+    width: 64px;
+    vertical-align: top;
+}
+
+.why-choose-item {
+    background-color: #f0e7e7;
+    padding: 20px;
+    flex: 1 1 calc(33% - 20px); /* Adjust width of each item (33% for three items per row) */
+}
+
+.why-choose-item p {
+    background-color: #f0e7e7;
+    margin: 2% auto;
+    vertical-align: top;
+    padding: 20px;
+    font-size: 18px;
+    color: #684451;
+    text-align: center;
+}
+
+
 
 /*----- Footer -----*/
 
@@ -612,103 +819,7 @@ footer {
 }
 
 
-/* Main */
-
-/* Reviews*/
-
-.main-content {
-    height: 100%;
-    margin: 5% 0;
-}
-
-.main-content h1 {
-    margin-top: 5%;
-    margin-bottom: 3%;
-    text-align: center;
-    color: #0F4C75;
-    
-}
-
-.reviews-carousel {
-    display: flex;
-    text-wrap: wrap;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-height: 500px; /* Adjust max-width as needed */
-    margin: 0 auto;
-    padding: 20px;
-    position: relative;
-    
-}
-
-/* Container for reviews */
-.reviews {
-    display: flex;
-    text-wrap: wrap;
-    transition: transform 0.5s ease;
-    gap: 20px;
-    max-width: 1240px;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-}
-
-/* Individual review */
-.review {
-    scroll-snap-align: start;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    width: 400px; /* Adjust minimum width as needed */
-    flex: 0 0 auto;
-    box-sizing: border-box;
-    overflow: hidden;
-    
-}
-
-/* Header section of the review */
-.review-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.review-header img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.review-details {
-    flex: 1;
-}
-
-.review-details h2 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-}
-
-.review-date {
-    font-size: 0.9em;
-    color: #666;
-}
-
-.review-stars {
-    font-size: 1.5em;
-    color: #f1c40f;
-}
-
-.star {
-    margin-right: 2px;
-}
-
-/* Review content */
-.review-content {
-    line-height: 1.5;
-}
-
-/* Contact Page */
+/*----- Contact Page -----*/
 .wrapper {
     display: flex;
     justify-content: center;
@@ -785,7 +896,7 @@ footer {
     border: 0;
 }
 
-/* Responsive Css*/
+/*----- Responsive Css-----*/
 
 @media only screen and (max-width: 1600px){
 
@@ -1021,25 +1132,18 @@ footer {
 }
     
 
-
-  
-
-
-/* ScrollBar*/
-
+/*----- ScrollBar -----*/
 ::-webkit-scrollbar {
     width: 5px;
     height: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); 
     -webkit-border-radius: 5px;
     border-radius: 5px;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 5px;
     border-radius: 5px;
