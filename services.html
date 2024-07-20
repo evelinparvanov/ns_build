@@ -27,7 +27,155 @@
 </head>
 <body>
     <div id="navbar-main"></div>
+    <div class="image-container">
+      <div class="image-main"> 
+          <img src="Images/main-image-h1.jpeg" alt="NS Stroi" id="mainImage" class="small-main-image">
+          <div class="image-text">
+              <h1 class="no-home-page-text">Услуги</h1>
+          </div>
+          <script>
+              window.onload = function() {
+          // Your JavaScript code here
+          // Select the img element
+          const mainImage = document.getElementById('mainImage');
 
+          // Function to change image source based on screen width
+          function changeMainImage() {
+              const screenWidth = window.innerWidth;
+              const mobileMaxWidth = 500; // Adjust as needed
+
+              if (screenWidth <= mobileMaxWidth) {
+                  mainImage.src = 'Images/main-image-v2.jpeg'; // Path to mobile image
+              } else {
+                  mainImage.src = 'Images/main-image.jpeg'; // Default image for larger screens
+              }
+          }
+
+          // Call the function initially to set the image based on current screen size
+          changeMainImage();
+
+          // Event listener to handle window resize
+          window.addEventListener('resize', changeMainImage);
+      };
+          </script>
+      </div>
+    </div>
+
+    <main>
+
+      <div class="our-services-main container">
+        <section class="our-service-content">
+            <div class="text">
+                <h2>Нашите услуги</h2>
+                <h1>Ремонтни дейности</h1>
+                <ul id="five-services">
+                  <li>ВиК</li>
+                  <li>Баня</li>
+                  <li>Електро</li>
+                  <li>Външна изолация</li>
+                  <li>Шпакловки</li>
+                </ul>
+                <div class="contact-button">
+                    <a href="contact.html">Контакти</a>
+                </div>
+            </div>
+            <aside class="image">
+                <img src="Images/main-image-v2.jpeg" alt="Construction image">
+                <footer class="contact-info">
+                    <p>Трябва ви ремонт? Свържете се с нас!</p>
+                    <a class="nav-info-link" href="mailto:info@nsbuild.eu">
+                        <img src="Images/email-black.png" alt="ns build email">
+                    </a>
+                    <a class="nav-info-link" href="tel:087 771 7700">
+                        <img src="Images/telephone-black.png" alt="ns build phone">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61555637235665">
+                        <img src="Images/facebook.png" alt="ns build facebook">
+                    </a>
+                    <a href="https://www.instagram.com/ns_build2024/">
+                        <img src="Images/instagram.png" alt="ns build instagram">
+                    </a>
+                </footer>
+            </aside>
+        </section>
+    </div>
+
+
+      <div class="site-header">
+        <h1 class="site-title">Строителството е повече от бизнес за нас</h1>
+        <p class="site-subtitle">Ние предлагаме качество без компромис!</p>
+    </div>
+    <div class="site-main">
+        <div class="services-section">
+            <div class="services-header">
+                <h2 class="services-title">Нашите Услуги</h2>
+                <p class="services-description">За нас е от изключително значение да предоставим най-добро обслужване и качествен строителен продукт, защото Вашите успешно реализирани проекти са нашата реклама и гаранция за качеството и професионализъм.</p>
+            </div>
+            <div class="services-container">
+                <div class="service-card">
+                    <h3 class="service-card-title">Производство и преработка на дървен материал</h3>
+                    <p class="service-card-description">Предлагаме дървообработване, производство и преработка на дървен материал за строителния сектор.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-card-title">Услуги с багер и самосвал</h3>
+                    <p class="service-card-description">Извършваме дейности като изкопи за канали, дренажи, изчни основи, основи за огради, обратни насипи, подравняване на терени, както и подравняване, насипване и валиране.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-card-title">Електрически материали</h3>
+                    <p class="service-card-description">В нашите магазини предлагаме богат асортимент от електроматериали на водещи производители. Опитният ни персонал е на разположение, за да Ви помогне в избора на електропродукт.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-card-title">ВИК части и материали</h3>
+                    <p class="service-card-description">Разполагаме с всичко необходимо за изграждането на водопровод и канализация.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-card-title">Железария</h3>
+                    <p class="service-card-description">Разнообразие от инструменти и крепежни елементи ще откриете в нашите магазини със складове.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-footer">
+        <div class="services-contact">
+            <p class="contact-text">Посетете нашите складови бази с магазини</p>
+            <div class="contact-button">
+              <a href="contact.html">Контакти</a>
+          </div>
+        </div>
+    </div>
+
+
+      <div class="why-us container">
+        <div class="three-reasons-why-us">
+            <h1 class="why-us-title"> Защо да изберете NS Build?</h1>
+            <h3>Ние се гордеем с нашия ангажимент към съвършенство във всеки проект, който предприемаме.</h3>
+            <section class="why-choose-grid">
+                <div class="why-choose-item">
+                    <img src="Images/construction.png" alt="construction materials">
+                    <h3>Качествени материали</h3>
+                    <p>
+                        Използваме само висококачествени и сертифицирани материали, което гарантира дълготрайност и надеждност на всяка построена от нас сграда.
+                    </p>
+                </div>
+                <div class="why-choose-item">
+                    <img src="Images/workers.png" alt="Profile Picture">
+                    <h3>Дългогодишен опит и експертиза</h3>
+                    <p>
+                        Имаме висококвалифициран екип от инженери, архитекти и строителни работници, които са експерти в своята област.
+                    </p>
+                </div>
+                <div class="why-choose-item">
+                    <img src="Images/warranty.png" alt="Profile Picture">
+                    <h3>Гаранция и поддръжка</h3>
+                    <p>
+                        Предоставяме гаранция за извършената работа и предлагаме последваща поддръжка за всички наши проекти.
+                    </p>
+                </div>
+            </section>
+        </div>
+      </div>
+    </main>
+    
 
     <div id="footer"></div>
 </body>
