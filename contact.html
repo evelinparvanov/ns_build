@@ -9,86 +9,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/ns-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/png" href="Images/ns-logo.png">
+    <script>
+        function loadHTML(selector, url) {
+          fetch(url)
+            .then(response => response.text())
+            .then(data => {
+              document.querySelector(selector).innerHTML = data;
+            });
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+          loadHTML("#footer", "footer.html");
+          loadHTML("#navbar-main", "navbar-main.html");
+        });
+      </script>
 </head>
-<body class="contact-page">
-    <header class="header">
-        <div class="navbar">
-            <nav class="nav-info">
-                <a class="nav-info-link" href="https://www.google.com/maps/place/Dental+Smile+-+%D0%94%D0%B5%D0%BD%D1%82%D0%B0%D0%BB+%D0%A1%D0%BC%D0%B0%D0%B9%D0%BB+%D0%94%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D0%BD%D0%B0+%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/@43.413796,24.623515,15z/data=!4m6!3m5!1s0x40abf5015ea8312b:0x2b33d73dceb12090!8m2!3d43.4134155!4d24.6235147!16s%2Fg%2F11lq40w46n?hl=en&entry=ttu">
-                    <img src="Images/location.png" alt="dental smile location">
-                    <span>Плевен ул. „Цар Борис III“ 12</span>
-                </a>
-                <a class="nav-info-link" href="mailto:info@nsbuild.eu">
-                    <img src="Images/email.png" alt="dental smile email">
-                    <span>info@nsbuild.eu</span>
-                </a>
-                <a class="nav-info-link">
-                    <img src="Images/clock.png" alt="dental smile working hours">
-                    <span>9:00 AM - 18:00 PM</span>
-                </a>
-                <a class="nav-info-link" href="tel:087 771 7700">
-                    <img src="Images/telephone.png" alt=" phone">
-                    <span>087 771 7700</span>
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=61555637235665">
-                    <img src="Images/facebook.png" alt=" facebook">
-                </a>
-                <a href="https://www.instagram.com/ns_build2024/">
-                    <img src="Images/instagram.png" alt=" instagram">
-                </a>
-            </nav>
-            <nav class="nav-main">
-                <a href="#">
-                    <img class="logo" src="Images/ns-logo.png" alt="Dental Smile Logo">
-                </a>
-                <ul id="sidemenu">
-                    <li><a href="index.html">НАЧАЛО</a></li>
-                    <li><a href="about.html">ЗА НАС</a></li>
-                    <li class="dropdown">
-                        <a href="services.html" class="dropbtn">УСЛУГИ</a>
-                        <div class="dropdown-content">
-                            <a href="web_design.html">Web Design</a>
-                            <a href="seo.html">SEO</a>
-                            <a href="marketing.html">Marketing</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="services.html" class="dropbtn">ПАРТНЬОРИ</a>
-                        <div class="dropdown-content">
-                            <a href="web_design.html">Benjamin Moore</a>
-                            <a href="seo.html">Ламинати AGT</a>
-                            <a href="marketing.html">Brezza Di Colori</a>
-                            <a href="marketing.html">Dessa Decor</a>
-                            <a href="marketing.html">Картини от Стъкло</a>
-                            <a href="marketing.html">Brezza Di Colori</a>
-                            <a href="marketing.html">Стенни Профили от МДФ</a>
-                            <a href="marketing.html">3D Панели</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="services.html" class="dropbtn">ЦЕНИ</a>
-                        <div class="dropdown-content">
-                            <a href="web_design.html">Web Design</a>
-                            <a href="seo.html">SEO</a>
-                            <a href="marketing.html">Marketing</a>
-                        </div>
-                    </li>
-                    <li><a href="galery.html">ПРОЕКТИ</a></li>
-                    <li><a href="galery.html">БЛОГ</a></li>
-                    <li><a href="contact.html">КОНТАКТИ</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-            </nav>
-            
-        </div>
-        
-    </header>
-    
+<body>
+    <div id="navbar-main"></div>
+
     <main>
-
         <h1 class="contact-title">Свържете се с нас</h1>
-
         <div class="wrapper">
             <div class="contact-container">
                 <div class="contact-details">
@@ -106,91 +47,8 @@
                 </div>
             </div>
         </div>
-        
-
-        
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="for-us">
-                <img class="logo" src="images/ns-logo-white.png" alt="Dental Smile Logo">
-                <p>Ние в НС Строй  се  гордеем с нашия ангажимент към съвършенство във всеки проект, който предприемаме с нашият екип от опитни професионалисти. </p>
-            </div>
-            
-            <div class="services">
-                <h3>УСЛУГИ</h3>
-                <ul>
-                    <li>ВиК</li>
-                    <li>Баня</li>
-                    <li>Електро</li>
-                    <li>Външна изолоция</li>
-                    <li>Шпакловки</li>
-                </ul>
-            </div>
-            
-            <div class="contact-info">
-                <h3>КОНТАКТИ</h3>
-                <ul>
-                    <li>
-                        <a href="https://instagram.com/example">
-                            <img src="Images/location.png">
-                            <p>Плевен ул. „Цар Борис III“ 12</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tel:087 771 7700">
-                            <img src="Images/telephone.png">
-                            <p>087 771 7700</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:info@nsbuild.eu">
-                            <img src="Images/email.png">
-                            <p>info@nsbuild.eu</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/profile.php?id=61555637235665">
-                            <img src="Images/facebook.png">
-                            <p>НС Строй</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/ns_build2024/">
-                            <img src="Images/instagram.png">
-                            <p>ns_build2024</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="working-time">
-                <h3>РАБОТНО ВРЕМЕ</h3>
-                <ul>
-                    <li>Понеделник: 8:00 – 18:00</li>
-                    <li>Вторник: 8:00 – 18:00</li>
-                    <li>Сряда: 8:00 – 18:00</li>
-                    <li>Четвъртък: 8:00 – 18:00</li>
-                    <li>Петък: 8:00 – 18:00</li>
-                    <li>Събота: Затворено</li>
-                    <li>Неделя: Затворено</li>
-                    
-                </ul>
-            </div>
-        </div>
-        
-        <div class="copyright">
-            <p>Всички права запазени.</p>
-            <div class="social-links">
-                <ul>
-                    <li><a href="https://instagram.com/example"><img src="Images/telephone.png"></a></li>
-                    <li><a href="https://instagram.com/example"><img src="Images/email.png"></a></li>
-                    <li><a href="https://facebook.com/example"><img src="Images/facebook.png"></a></li>
-                    <li><a href="https://twitter.com/example"><img src="Images/instagram.png"></a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
 </body>
 </html>
