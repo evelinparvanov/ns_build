@@ -17,7 +17,7 @@ body {
 
 :root {
     --font-size-base: 16px;
-    --font-color: #333;
+    --font-color: #000000;
     --h1-size: 3em;
     --h2-size: 1.5em;
     --h3-size: 1.17em;
@@ -43,6 +43,7 @@ body {
   
   h1 {
     font-size: var(--h1-size);
+    color: var(--font-color);
   }
   
   h2 {
@@ -104,9 +105,6 @@ body {
   figcaption {
     font-size: var(--figcaption-size);
   }
-  
-
-
 
 /* Info Nav Bar */
 .nav-info {
@@ -244,6 +242,11 @@ nav ul li.dropdown:hover .dropdown-content {
 
 /* ----- Home Page -----*/
 /* Main Image */
+
+.main-content {
+    width: 100%;
+    overflow-x: hidden ;
+}
 
 .image-main {
     position: relative;
@@ -633,6 +636,7 @@ form .btn.btn2 {
 /*----- Our Services Section -----*/
 
 .our-services-main {
+    height: 120vh;
     margin: 0;
     padding: 0;
     background-color: rgb(250, 250, 250);
@@ -726,6 +730,13 @@ form .btn.btn2 {
     font-weight: bold;
 }
 
+.our-service-content #five-services img {
+    width: 28px;
+    height: 28px;
+    padding: 8px auto;
+
+}
+
 .our-service-content .image a {
     display: inline-flex; /* Aligns image and text horizontally */
     align-items: center; /* Centers items vertically */
@@ -763,15 +774,16 @@ form .btn.btn2 {
 
 .site-title {
     margin: 0;
-    color: #333;
+    color: #000;
 }
 
 .site-subtitle {
     margin: 10px 0;
-    color: #666;
+    color: #544040;
 }
 
 .site-main {
+    margin: 40px auto;
     padding: 20px;
 }
 
@@ -779,12 +791,6 @@ form .btn.btn2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.services-header {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 .services-title {
@@ -799,19 +805,45 @@ form .btn.btn2 {
 
 .services-container {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+}
+.service-card {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.service-card {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin: 10px;
+    margin: 20px;
     padding: 20px;
     width: calc(33% - 40px);
     box-sizing: border-box;
+    border: 5px solid rgb(210, 202, 190);
+    box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.service-card-title  {
+    width: fit-content;
+}
+
+.service-card > :not(:last-child) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-card img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    
 }
 
 .service-card-title {
@@ -840,6 +872,133 @@ form .btn.btn2 {
     color: #333;
 }
 
+/*----- Service Prices -----*/
+
+.service-prices-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.service-prices-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 22px;
+}
+
+.service-prices-title h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.service-prices {
+    max-height: 400px;
+    overflow: scroll;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.service-prices-name {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.sub-service-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sub-service-info {
+    font-weight: bold;
+    color: red;
+    
+}
+
+.sub-services {
+    line-height: 1.5rem;
+    padding-left: 1rem;
+}
+
+.sub-service {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+/*----- Blog Page -----*/
+
+.blog-container {
+    width: 90%;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.blog-post {
+    flex: 3;
+    margin: 20px;
+}
+
+.post-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.post-date {
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.post-excerpt {
+    margin-bottom: 15px;
+}
+
+.post-content {
+    margin-bottom: 20px;
+}
+
+.recent-posts {
+    flex: 1;
+    background: #eee;
+    margin-left: 100px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.recent-posts-title {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.recent-posts-list {
+    list-style: none;
+}
+
+.recent-post-item {
+    margin-bottom: 10px;
+}
+
+.recent-post-link {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.recent-post-link:hover {
+    color: #007BFF;
+}
 
 
 /*----- Footer -----*/
@@ -1339,6 +1498,11 @@ footer {
         text-align: center; /* Center-align list items */
         align-self: center;
         align-items: center;
+    }
+
+    .reviews-container {
+        max-width: 100%;
+        overflow-y: scroll;
     }
 }
     
