@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>НС Строй</title>
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <script src="/assets/scripts/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/png" href="/assets/Images/common/ns-logo.png">
+    <script>
+        function loadHTML(selector, url) {
+            fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector(selector).innerHTML = data;
+            });
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            loadHTML("#navbar", "/html/navbar.html");
+            loadHTML("#footer", "/html/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div class="all-pages-title">
+        <h1>БАНИ</h1>
+    </div>
+
+    <main>
+
+        <div class="projects-container">
+            <div class="projects-card">
+    
+                <div class="project-card">
+                    <a href="/html/bani-html/plevendrujba.html">
+                        <img src="/assets/Images/bani-snimki/banq-pleven-drujba/1 (17).jpg">
+                        <h2>Плевен Дружба</h2>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <a href="/html/bani-html/plevendrujba2.html">
+                        <img src="/assets/Images/bani-snimki/banq-plewen-drujba2/1 (13).jpg">
+                        <h2>Плевен Дружба 2</h2>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <a href="/html/bani-html/plevendrujba3.html">
+                        <img src="/assets/Images/bani-snimki/banq-plewen-drujba3/1 (4).jpg">
+                        <h2>Плевен Дружба 3</h2>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <a href="/html/bani-html/plevendrujba4.html">
+                        <img src="/assets/Images/bani-snimki/banq-plewen-drujba4/1 (34).jpg">
+                        <h2>Плевен Дружба 4</h2>
+                    </a>
+                </div>
+    
+                <div class="project-card">
+                    <a href="/html/bani-html/pleven9kvartal.html">
+                        <img src="/assets/Images/bani-snimki/banq-pleven-9kvartal-snimki/1 (6).jpg">
+                        <h2>Плевен 9-ти квартал</h2>
+                    </a>
+                </div>
+    
+                <div class="project-card">
+                    <a href="/html/bani-html/bukovluk.html">
+                        <img src="/assets/Images/bani-snimki/bukovluk/1 (1).jpg">
+                        <h2>Буковлък</h2>
+                    </a>
+                </div>
+    
+                <div class="project-card">
+                    <a href="/html/bani-html/vurbica.html">
+                        <img src="/assets/Images/bani-snimki/vurbica/1 (9).jpg">
+                        <h2>Върбица</h2>
+                    </a>
+                </div>
+    
+                <div class="project-card">
+                    <a href="/html/bani-html/zgalevo.html">
+                        <img src="/assets/Images/bani-snimki/zgalevo/1 (10).jpg">
+                        <h2>Згалево</h2>
+                    </a>
+                </div>
+    
+                <div class="project-card">
+                    <a href="/html/bani-html/sofiq1.html">
+                        <img src="/assets/Images/bani-snimki/sofiq1/1 (5).jpg">
+                        <h2>София 1</h2>
+                    </a>
+                </div>
+    
+                <div class="project-card">
+                    <a href="/html/bani-html/sofiq2.html">
+                        <img src="/assets/Images/bani-snimki/sofiq2/1 (3).jpg">
+                        <h2>София 2</h2>
+                    </a>
+                </div>
+    
+                <div class="project-card">
+                    <a href="/html/bani-html/sofiq3.html">
+                        <img src="opanec/1_1.jpg">
+                        <h2>София 3</h2>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <a href="/html/bani-html/sofiq4.html">
+                        <img src="opanec/1_1.jpg">
+                        <h2>София 4</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    
+</body>
+</html>

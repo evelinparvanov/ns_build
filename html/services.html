@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>НС Строй</title>
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <script src="/assets/scripts/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/png" href="/assets//assets/Images/common/common/ns-logo.png">
+    <script>
+        function loadHTML(selector, url) {
+            fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector(selector).innerHTML = data;
+            });
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            loadHTML("#navbar", "/html/navbar.html");
+            loadHTML("#footer", "/html/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div class="all-pages-title">
+        <h1>УСЛУГИ</h1>
+    </div>
+
+    <main>
+      <div class="our-services-main container">
+        <section class="our-service-content">
+            <div class="text">
+                <h2>Нашите услуги</h2>
+                <h1>Ремонтни дейности</h1>
+                <ul id="five-services">
+                  <li><img class="next-arrow" src="/assets/Images/common/left-arrow.png">ВиК</li>
+                  <li><img class="next-arrow" src="/assets/Images/common/left-arrow.png">Баня</li>
+                  <li><img class="next-arrow" src="/assets/Images/common/left-arrow.png">Електро</li>
+                  <li><img class="next-arrow" src="/assets/Images/common/left-arrow.png">Външна изолация</li>
+                  <li><img class="next-arrow" src="/assets/Images/common/left-arrow.png">Шпакловки</li>
+                  <li><img class="next-arrow" src="/assets/Images/common/left-arrow.png">Окачени тавани</li>
+                </ul>
+                <div class="contact-button">
+                    <a href="contact.html">Контакти</a>
+                </div>
+            </div>
+            <aside class="image">
+                <img src="/assets/Images/common/main-image-v2.jpeg" alt="Construction image">
+                <footer class="contact-info">
+                    <p>Трябва ви ремонт? Свържете се с нас!</p>
+                    <a class="nav-info-link" href="mailto:info@nsbuild.eu">
+                        <img src="/assets/Images/common/email-black.png" alt="ns build email">
+                    </a>
+                    <a class="nav-info-link" href="tel:087 771 7700">
+                        <img src="/assets/Images/common/telephone-black.png" alt="ns build phone">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61555637235665">
+                        <img src="/assets/Images/common/facebook.png" alt="ns build facebook">
+                    </a>
+                    <a href="https://www.instagram.com/ns_build2024/">
+                        <img src="/assets/Images/common/instagram.png" alt="ns build instagram">
+                    </a>
+                </footer>
+            </aside>
+        </section>
+    </div>
+
+
+      <div class="site-header">
+        <h1 class="site-title">Строителството е повече от бизнес за нас</h1>
+        <p class="site-subtitle">Ние предлагаме качество без компромис!</p>
+    </div>
+    <div class="site-main" id="services-information">
+        <div class="services-section">
+            <div class="services-container">
+                <div class="service-card">
+                    <h3 class="service-card-title">Външна изолация</h3>
+                    <img src="/assets/Images/common/house.png">
+                    <p class="service-card-description">Предлагаме цялостни решения за външна изолация на сгради, включително оценка на текущото състояние, нанасяне на изолационни материали и завършителни работи. Нашият екип осигурява висока ефективност и дълготрайност, които подобряват енергийния рейтинг на вашата сграда.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-card-title">Шпакловки</h3>
+                    <img src="/assets/Images/common/plastering.png">
+                    <p class="service-card-description">Извършваме професионални услуги по шпакловка, включително подготовка на стени и тавани, нанасяне на шпакловъчни смеси и финално изравняване на повърхности. Осигуряваме гладко и готово за боядисване или облицоване покритие.                    </p>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-card-title">Електро</h3>
+                    <img src="/assets/Images/common/electrical-energy.png">
+                    <p class="service-card-description">Нашата компания предлага изпълнение на електрически инсталации, включително монтаж на осветителни системи, електрически кабели, контакти и ключове. Нашите електротехници осигуряват безопасни и надеждни решения за всички ваши електрически нужди.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-card-title">ВиК</h3>
+                    <img src="/assets/Images/common/plumbing.png">
+                    <p class="service-card-description">Специализирани сме в изграждането и поддръжката на водопроводни и канализационни системи. Нашите услуги включват инсталация на тръби, фитинги, помпи и системи за отпадни води, осигурявайки надеждност и ефективност на водоснабдителните и канализационни мрежи.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-card-title">Баня</h3>
+                    <img src="/assets/Images/common/bathroom.png">
+                    <p class="service-card-description">Предлагаме пълно изпълнение на строителни и ремонтни дейности за бани, включително инсталация на санитария, плочки и монтаж на мебели. Нашият опитен екип осигурява качествени решения и внимание към детайла за създаване на функционални и естетични бани.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-card-title">Окачени тавани</h3>
+                    <img src="/assets/Images/common/ceiling.png">
+                    <p class="service-card-description">Специализирани сме в изграждане на окачени тавани, като предлагаме всичко необходимо за успешното им изпълнение. От инсталиране на структурни рамки до монтаж на декоративни панели и интегрирани осветителни решения, нашият опитен екип се грижи за всеки детайл, за да осигури приятен и функционален завършек.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-footer">
+        <div class="services-contact">
+            <p class="contact-text">Посетете нашите складови бази с магазини</p>
+            <div class="contact-button">
+              <a href="contact.html">Контакти</a>
+          </div>
+        </div>
+    </div>
+
+
+      <div class="why-us container">
+        <div class="three-reasons-why-us">
+            <h1 class="why-us-title"> Защо да изберете NS Build?</h1>
+            <h3>Ние се гордеем с нашия ангажимент към съвършенство във всеки проект, който предприемаме.</h3>
+            <section class="why-choose-grid">
+                <div class="why-choose-item">
+                    <img src="/assets/Images/common/construction.png" alt="construction materials">
+                    <h3>Качествени материали</h3>
+                    <p>
+                        Използваме само висококачествени и сертифицирани материали, което гарантира дълготрайност и надеждност на всяка построена от нас сграда.
+                    </p>
+                </div>
+                <div class="why-choose-item">
+                    <img src="/assets/Images/common/workers.png" alt="Profile Picture">
+                    <h3>Дългогодишен опит и експертиза</h3>
+                    <p>
+                        Имаме висококвалифициран екип от инженери, архитекти и строителни работници, които са експерти в своята област.
+                    </p>
+                </div>
+                <div class="why-choose-item">
+                    <img src="/assets/Images/common/warranty.png" alt="Profile Picture">
+                    <h3>Гаранция и поддръжка</h3>
+                    <p>
+                        Предоставяме гаранция за извършената работа и предлагаме последваща поддръжка за всички наши проекти.
+                    </p>
+                </div>
+            </section>
+        </div>
+      </div>
+    </main>
+    
+
+    <div id="footer"></div>
+</body>
+</html>

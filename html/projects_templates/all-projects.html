@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>НС Строй</title>
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <script src="/assets/scripts/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/png" href="/assets/Images/common/ns-logo.png">
+    <script>
+        function loadHTML(selector, url) {
+            fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector(selector).innerHTML = data;
+            });
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            loadHTML("#navbar", "/html/navbar.html");
+            loadHTML("#footer", "/html/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div class="all-pages-title">
+        <h1>ВСИЧКИ ПРОЕКТИ</h1>
+    </div>
+
+    
+    <div class="projects-container">
+        <div class="projects-card">
+
+            <div class="project-card">
+                <a href="/html/projects_templates/sofiq_all.html">
+                    <img src="/assets/Images/sofiq/staq9.jpg">
+                    <h2>Обекти в София</h2>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="/html/projects_templates/bani.html">
+                    <img src="/assets/Images/sofiq/banq1.jpg">
+                    <h2>Бани</h2>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="/html/projects_templates/koridori.html">
+                    <img src="/assets/Images/sofiq/koridor.jpg">
+                    <h2>Коридори</h2>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="/html/projects_templates/spalni.html">
+                    <img src="/assets/Images/sofiq/spalnq.jpg">
+                    <h2>Спални</h2>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="/html/projects_templates/trapezarii.html">
+                    <img src="/assets/Images/sofiq/trapezariq2.jpg">
+                    <h2>Трапезария</h2>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="/html/projects_templates/kushta-opanec.html">
+                    <img src="/assets/Images/opanec/1_1.jpg">
+                    <h2>Къща Опанец</h2>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="/html/projects_templates/kushta-opanec.html">
+                    <img src="/assets/Images/opanec/1_1.jpg">
+                    <h2>Къща Опанец</h2>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="/html/projects_templates/kushta-opanec.html">
+                    <img src="/assets/Images/opanec/1_1.jpg">
+                    <h2>Къща Опанец</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer"></div>
+</body>
+</html>

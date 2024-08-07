@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>НС Строй</title>
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <script src="/assets/scripts/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/png" href="/assets//assets/Images/common/common/ns-logo.png">
+    <script>
+        function loadHTML(selector, url) {
+            fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector(selector).innerHTML = data;
+            });
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            loadHTML("#navbar", "/html/navbar.html");
+            loadHTML("#footer", "/html/footer.html");
+        });
+    </script>
+</head>
+<body>
+
+    <div id="navbar"></div>
+    <div class="all-pages-title">
+        <h1>ЗА НАС</h1>
+    </div>
+
+    <main>
+        <div class="about-us-main-container">
+            <section class="about-content">
+                <div class="text">
+                    <h2>Кой сме ние?</h2>
+                    <h1>НС Строй</h1>
+                    <p>НС Строй 2024 ЕООД е строително-ремонтна компания. 
+                        Ние се гордеем с нашия ангажимент към съвършенство във всеки проект, който предприемаме. Нашият екип от опитни професионалисти работи неуморно в Плевенския регион и цяла България, за да предостави висококачествени строително-ремонтни услуги, които надхвърлят очакванията на нашите клиенти. С фокус върху иновациите, устойчивостта и вниманието към детайлите, ние се стремим да създаваме пространства, които вдъхновяват и издържат във времето.
+                        Независимо дали става въпрос за жилищен, търговски или промишлен проект, ние подхождаме към всяко начинание с всеотдайност, опит и страст към майсторството.С екипа на НС Строй 2024 ЕООД можете да бъдете уверени, че вашата визия ще се превърне в реалност.
+                    </p>
+                    <div class="contact-button">
+                        <a href="/html/contact.html">Контакти</a>
+                    </div>
+                </div>
+                <aside class="image">
+                    <img src="/assets/Images/common/main-image-v2.jpeg" class="image-info-about" alt="Construction image">
+                    <footer class="contact-info">
+                        <p>Трябва ви ремонт? Свържете се с нас!</p>
+                        <a class="nav-info-link" href="mailto:info@nsbuild.eu">
+                            <img src="/assets/Images/common/email-black.png" alt="ns build email">
+                        </a>
+                        <a class="nav-info-link" href="tel:087 771 7700">
+                            <img src="/assets/Images/common/telephone-black.png" alt="ns build phone">
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61555637235665">
+                            <img src="/assets/Images/common/facebook.png" alt="ns build facebook">
+                        </a>
+                        <a href="https://www.instagram.com/ns_build2024/">
+                            <img src="/assets/Images/common/instagram.png" alt="ns build instagram">
+                        </a>
+                    </footer>
+                </aside>
+            </section>
+        </div>
+
+        <div class="why-us container">
+            <div class="three-reasons-why-us">
+                <h1 class="why-us-title"> Защо да изберете NS Build?</h1>
+                <h3>Ние се гордеем с нашия ангажимент към съвършенство във всеки проект, който предприемаме.</h3>
+                <section class="why-choose-grid">
+                    <div class="why-choose-item">
+                        <img src="/assets/Images/common/construction.png" alt="construction materials">
+                        <h3>Качествени материали</h3>
+                        <p>
+                            Използваме само висококачествени и сертифицирани материали, което гарантира дълготрайност и надеждност на всяка построена от нас сграда.
+                        </p>
+                    </div>
+                    <div class="why-choose-item">
+                        <img src="/assets/Images/common/workers.png" alt="Profile Picture">
+                        <h3>Дългогодишен опит и експертиза</h3>
+                        <p>
+                            Имаме висококвалифициран екип от инженери, архитекти и строителни работници, които са експерти в своята област.
+                        </p>
+                    </div>
+                    <div class="why-choose-item">
+                        <img src="/assets/Images/common/warranty.png" alt="Profile Picture">
+                        <h3>Гаранция и поддръжка</h3>
+                        <p>
+                            Предоставяме гаранция за извършената работа и предлагаме последваща поддръжка за всички наши проекти.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Reviews -->
+         
+        <h1 class="review-title">Какво казват клиентите за нас</h1>
+        <div class="reviews-carousel">
+                <div class="reviews">
+                    <div class="review">
+                        <div class="review-header">
+                            <img src="/assets/Images/common/p1.png" alt="Profile Picture">
+                            <div class="review-details">
+                                <h2>Kaloian Marinovski</h2>
+                                <span class="review-date">2024</span>
+                                <div class="review-stars">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-content">Страхотен професионализъм,страхотни материали и спазване на срокове.Изключително прецизни и взискателни към работата си.
+                            Работят с голяма страст.Бързина с максимално качество.</p>
+                    </div>
+        
+                    <div class="review">
+                        <div class="review-header">
+                            <img src="/assets/Images/common/p2.png" alt="Profile Picture">
+                            <div class="review-details">
+                                <h2>Dimitar Kanchev</h2>
+                                <span class="review-date">2024</span>
+                                <div class="review-stars">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-content">Коректност и професионализъм, могат да учат и добрите в занаята!</p>
+                    </div>
+        
+                    <div class="review">
+                        <div class="review-header">
+                            <img src="/assets/Images/common/p3.png" alt="Profile Picture">
+                            <div class="review-details">
+                                <h2>Ивайло Николов</h2>
+                                <span class="review-date">2024</span>
+                                <div class="review-stars">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-content">Много благодаря за добре свършената работа от екипът ви. Препоръчвам.</p>
+                    </div>
+
+                    <div class="review">
+                        <div class="review-header">
+                            <img src="/assets/Images/common/p4.png" alt="Profile Picture">
+                            <div class="review-details">
+                                <h2>Dani Petkov</h2>
+                                <span class="review-date">2024</span>
+                                <div class="review-stars">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-content">Топ коректна фирма , препоръчвам</p>
+                    </div>
+        </div>
+    </div>
+    </main>
+    
+
+    <div id="footer"></div>
+
+    <script src="static/js/script.js"></script>
+    
+</body>
+</html>
