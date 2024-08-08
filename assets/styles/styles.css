@@ -34,77 +34,11 @@ body {
     --button-size: 1em;
     --li-size: 1em;
     --figcaption-size: 0.9em;
+    --black: #000;
+    --white: #fff;
+    --orange: #C97A3F;
   }
-  
-  body {
-    font-size: var(--font-size-base);
-    color: var(--font-color);
-  }
-  
-  h1 {
-    font-size: var(--h1-size);
-    color: var(--font-color);
-  }
-  
-  h2 {
-    font-size: var(--h2-size);
-  }
-  
-  h3 {
-    font-size: var(--h3-size);
-  }
-  
-  h4 {
-    font-size: var(--h4-size);
-  }
-  
-  h5 {
-    font-size: var(--h5-size);
-  }
-  
-  h6 {
-    font-size: var(--h6-size);
-  }
-  
-  p {
-    font-size: var(--p-size);
-  }
-  
-  small {
-    font-size: var(--small-size);
-  }
-  
-  blockquote {
-    font-size: var(--blockquote-size);
-  }
-  
-  pre {
-    font-size: var(--pre-size);
-  }
-  
-  code {
-    font-size: var(--code-size);
-  }
-  
-  label {
-    font-size: var(--label-size);
-  }
-  
-  input {
-    font-size: var(--input-size);
-  }
-  
-  button {
-    font-size: var(--button-size);
-  }
-  
-  li {
-    font-size: var(--li-size);
-  }
-  
-  figcaption {
-    font-size: var(--figcaption-size);
-  }
+
 
 /* Info Nav Bar */
 .nav-info {
@@ -645,6 +579,9 @@ form .btn.btn2 {
     text-align: center;
 }
 
+
+
+
 /*----- Services Page ----- */
 /*----- Our Services Section -----*/
 
@@ -738,9 +675,10 @@ form .btn.btn2 {
     line-height: 2;
     text-decoration: none;
     list-style:none;
-    font-size: 32px;
-    color: #362886;
-    font-weight: bold;
+    font-size: 38px;
+    color: var(--orange);
+    font-weight: 500;
+    
 }
 
 .our-service-content #five-services img {
@@ -796,6 +734,7 @@ form .btn.btn2 {
 }
 
 .site-main {
+    background-color: rgb(245, 245, 245);
     margin: 40px auto;
     padding: 20px;
 }
@@ -807,12 +746,11 @@ form .btn.btn2 {
 }
 
 .services-title {
-    color: #333;
+    color: var(--orange);
     font-size: 1.5em;
 }
 
 .services-description {
-    color: #666;
     margin: 10px 0;
 }
 
@@ -831,19 +769,18 @@ form .btn.btn2 {
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid var(--orange);
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin: 20px;
     padding: 20px;
     width: calc(33% - 40px);
     box-sizing: border-box;
-    border: 5px solid rgb(210, 202, 190);
-    box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    box-shadow: 0 5px 10px var(--orange);
 }
 
 .service-card-title  {
+    color: var(--orange);
     width: fit-content;
 }
 
@@ -855,7 +792,7 @@ form .btn.btn2 {
 }
 
 .service-card img {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 64px;
@@ -2067,7 +2004,8 @@ footer {
     }
 
     .image-main img {
-        display: none;
+        height: 500px;
+        width: 100%;
     }
 
     .image-main {
