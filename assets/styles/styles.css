@@ -455,121 +455,147 @@ nav ul li.dropdown:hover .dropdown-content {
 
 /*----- Who Are We Section -----*/
 
-.about-us-main-container {
-    margin: 3% auto 0 auto;
+.about-page {
+    height: 90vh;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    min-height: 100vh;
-    max-height: 150vh; 
+    justify-content: center;
+    align-items: center;
 }
 
-
-.about-us-main-container {
+.company-overview {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f7f8fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px;
 }
 
-.about-us-main-container .about-content {
+.company-description {
+    flex: 3;
+}
+
+.company-description h2 {
+    font-size: 28px;
+    color: var(--orange);
+    margin-bottom: 10px;
+}
+
+.company-description h1 {
+    font-size: 48px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.company-description p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-us-button a {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--orange);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-us-button a:hover {
+    background-color: #0056b3;
+}
+
+/* Company Contact Section */
+.company-contact {
+    flex: 1;
     display: flex;
-    justify-content: space-between; /* Space between text and image */
-    align-items: center; /* Center items vertically */
-    width: 100%;
-    max-width: 1200px; /* Optional: set a max-width for the content */
-    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.about-us-main-container .text {
-    flex: 1 ;
-}
-
-.about-us-main-container .image {
-    width: 100%;
-    flex: 1 ;
+.contact-details p {
+    font-size: 20px;
+    color: #333;
     text-align: center;
-}
-
-.about-us-main-container h2 {
-    margin: 15px auto;
-    color: #ee152b;
-}
-
-.about-us-main-container h1 {
-    margin: 10px auto;
-    color: #000;
-    font-size: 2em;
-}
-
-.about-us-main-container p {
-    max-width: 500px;
-    text-wrap: wrap;
-    line-height: 1.6;
     margin: 10px 0;
 }
 
-.about-us-main-container .contact-button {
+.contact-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
     margin-top: 20px;
-}
-
-.about-us-main-container .contact-button a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #d32f2f;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.about-us-main-container .image img {
-    max-width: 100%;
-    height: 500px;
-    border-radius: 10px;
-}
-
-.about-us-main-container footer.contact-info {
-    margin-top: 20px;
-    text-align: center;
-    background-color: #f5f5f5;
     padding: 20px;
-    border-radius: 10px;
 }
 
-.about-us-main-container footer.contact-info p {
-    margin: 5px 0;
-    font-size: 1.1em;
-    color: #1e3a8a;
+.contact-link img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    margin: 10px;
 }
 
-.about-content .image a {
-    display: inline-flex; /* Aligns image and text horizontally */
-    align-items: center; /* Centers items vertically */
-    margin: 15px; /* Space around each link */
-    text-decoration: none; /* Remove underline from links */
+.contact-link img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.9);
 }
 
-/* Style the images within the links */
-.about-content .image a img {
-    width: 32px; /* Adjust size of the icons */
-    height: 32px; /* Ensure icons are square */
-    margin-right: 8px; /* Space between image and text */
+/* Responsive Design */
+@media (max-width: 768px) {
+    .company-overview {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .company-description {
+        margin-right: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .company-description h1 {
+        font-size: 36px;
+    }
+
+    .company-description p {
+        font-size: 16px;
+    }
+
+    .contact-us-button a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .company-contact {
+        width: 100%;
+    }
+
+    .contact-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-link {
+        margin-bottom: 20px;
+    }
 }
 
 
-/* Hover effects */
-.about-content .image a:hover img {
-    opacity: 0.8; /* Slightly fade the image on hover */
-}
 
-.about-content a:hover span {
-    text-decoration: underline; /* Underline text on hover */
-}
 
-.footer-content .about {
-    margin-top: 20%;
-}
-
-/*----- Why Us Section -----*/
 /*----- Why Us Section -----*/
 
 .why-us-container {
