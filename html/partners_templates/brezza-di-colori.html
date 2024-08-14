@@ -4,64 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>НС Строй</title>
-    <link rel="stylesheet" href="static/css/styles.css">
-    <script src="static/js/script.js"></script>
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <script src="/assets/scripts/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="icon" type="image/png" href="Images/ns-logo.png">
+    <link rel="icon" type="image/png" href="/assets/Images/common/ns-logo.png">
     <script>
         function loadHTML(selector, url) {
-          fetch(url)
+            fetch(url)
             .then(response => response.text())
             .then(data => {
-              document.querySelector(selector).innerHTML = data;
+                document.querySelector(selector).innerHTML = data;
             });
         }
         document.addEventListener("DOMContentLoaded", function() {
-          loadHTML("#footer", "footer.html");
-          loadHTML("#navbar-main", "navbar-main.html");
+            loadHTML("#navbar", "/html/navbar.html");
+            loadHTML("#footer", "/html/footer.html");
         });
-      </script>
+    </script>
 </head>
+
 <body>
-    <div id="navbar-main"></div>
-    <div class="image-container">
-      <div class="image-main"> 
-          <img src="Images/main-image-h1.jpeg" alt="NS Stroi" id="mainImage" class="small-main-image">
-          <div class="image-text">
-              <h1 class="no-home-page-text">Проекти</h1>
-          </div>
-          <script>
-              window.onload = function() {
-          // Your JavaScript code here
-          // Select the img element
-          const mainImage = document.getElementById('mainImage');
-
-          // Function to change image source based on screen width
-          function changeMainImage() {
-              const screenWidth = window.innerWidth;
-              const mobileMaxWidth = 500; // Adjust as needed
-
-              if (screenWidth <= mobileMaxWidth) {
-                  mainImage.src = 'Images/main-image-v2.jpeg'; // Path to mobile image
-              } else {
-                  mainImage.src = 'Images/main-image.jpeg'; // Default image for larger screens
-              }
-          }
-
-          // Call the function initially to set the image based on current screen size
-          changeMainImage();
-
-          // Event listener to handle window resize
-          window.addEventListener('resize', changeMainImage);
-      };
-          </script>
-      </div>
+    <div id="navbar"></div>
+    <div class="all-pages-title">
+        <h1>Brezza Di Colori</h1>
     </div>
 
-    
+    <main>
+        <div class="partner-description-container">
+            <div class="partner-description">
+                <h1>За Brezza Di Colori</h1>
+                <p>Брезза ди колори ООД е продуктова компания, предлагаща натурални, декоративни бои и мазилки от вар и глина. Насочени сме в довършителни работи, интериорен и екстериорен дизайн в строителния сектор. Продуктите ни са пряко свързани, както с естетичната визия, така и с качеството на микроклимата в обитаемата средата. В този смисъл, информирания и осъзнат избор за влагането на подобен род материали в дома, офиса, обществените сгради и пр., е решаващ за всеки човек. Наситен с позитиви, той е и отправната точка към реализирането на
+                    здравословна, комфортна и красива среда, създаването на която е наша кауза.
+                    Брезза ди колори ООД е официален представител за България на:
+                    1. Stucco Italiano – италиански производител на премиум клас доказали се във времето, варови мазилки и бои за интериор, екстериор и баня.
+                    2. Argilus – френски производител на глинени мазилки и бои, съчетаващ отлично традициите с иновативното и в резултат осъществяващ еволюция в еко строителството.
+                </p>
+                <a href="https://brezzadicolori.com/c/lime-plasters/?lang=en"><button class="learn-more-button">Пазарувай</button></a>
+            </div>
+        </div>
+    </main>
 
     <div id="footer"></div>
 </body>
