@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>НС Строй</title>
+    <title>НС Строй 2024. ЕООД</title>
     <link rel="stylesheet" href="/assets/styles/styles.css">
     <script src="/assets/scripts/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,9 +29,9 @@
     <header id="navbar"></header>
 
     <div class="home-page-image"> 
-        <img src="/assets/Images/common/main-image.jpeg" alt="NS Stroi" id="mainImage">
+        <img src="/assets/Images/common/construction_main1C.jpg" alt="NS Stroi" id="mainImage">
         <div class="home-page-text-image">
-            <h1>Експерти в стройтелната дейност</h1>
+            <h1>НС Строй 2024. ЕООД</h1>
             <p><strong>Изграждаме бъдещето, тухла по тухла.</strong></p>
         </div> 
     </div>
@@ -46,7 +46,7 @@
 
             <div class="why-us-container">
                 <div class="why-us-title">
-                    <h1>Защо да изберете NS Build?</h1>
+                    <h1>Защо да изберете НС Строй 2024. ЕООД ?</h1>
                     <h3>Ние се гордеем с нашия ангажимент към съвършенство във всеки проект, който предприемаме.</h3>
                 </div>
                 <section class="why-us-section">
@@ -184,7 +184,11 @@
                     <ul>
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Адрес: Плевен Център, ул. Цар Борис III 12</span>
+                            <span>
+                                <a href="https://www.google.com/maps/place/%D0%9F%D0%BB%D0%B5%D0%B2%D0%B5%D0%BD+%D0%A6%D0%B5%D0%BD%D1%82%D1%8A%D1%80,+%D1%83%D0%BB.+%D0%A6%D0%B0%D1%80+%D0%91%D0%BE%D1%80%D0%B8%D1%81+III+12,+5800+%D0%9F%D0%BB%D0%B5%D0%B2%D0%B5%D0%BD,+%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F/@43.411206,24.617866,16z/data=!4m6!3m5!1s0x40ab8b4d03b14cb7:0x7440b904fdbf92ec!8m2!3d43.4112085!4d24.6178999!16s%2Fg%2F11c1_gkgg6?hl=bg&entry=ttu">
+                                    Адрес: Плевен Център, ул. Цар Борис III 12
+                                </a>
+                            </span>
                         </li>
                         <li>
                             <i class="fas fa-phone-alt"></i>
@@ -207,11 +211,16 @@
                 <!-- Contact Form Section -->
                 <div class="contact-form">
                     <h2>Изпратете ни съобщение</h2>
-                    <form name="submit-to-google-sheet">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="8dc24f89-2796-4ac5-8baa-0f9af6102002">
                         <input type="text" name="Name" placeholder="Въведете имена" required>
                         <input type="text" name="Email" placeholder="Въведете имейл">
                         <input type="text" name="Phone" placeholder="Въведете телефон" required>
                         <textarea name="Message" rows="6" placeholder="Съобщение" style="resize: none;"></textarea>
+                        <!-- Honeypot Spam Protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                         <!-- Custom Confirmation / Success Page -->
+                        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
                         <button type="submit" class="btn btn2">Изпрати</button>
                         <span id="msg"></span>
                     </form>

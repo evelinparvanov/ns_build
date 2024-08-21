@@ -461,9 +461,9 @@ nav ul li.dropdown:hover .dropdown-content {
 
 .home-page-text-image {
     position: absolute;
-    top: 15%;
+    top: 25%;
     padding: 10px;
-    margin: 0 0 0 5%;
+    margin: 0 0 0 20px;
 }
 
 .home-page-text-image  h1{
@@ -472,13 +472,14 @@ nav ul li.dropdown:hover .dropdown-content {
     font-weight: bold;
     margin-bottom: 3%;
     color: #000;
-    text-align: center;
+    text-align: left;
 }
 
 .home-page-text-image p {
     font-size: 20px;
     color: #333333;
-    text-align: center;
+    margin: 0;
+    text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -1281,7 +1282,7 @@ nav ul li.dropdown:hover .dropdown-content {
 /*----- Blog Page -----*/
 .blog-posts {
     max-width: 80%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .blog-post {
@@ -1293,6 +1294,14 @@ nav ul li.dropdown:hover .dropdown-content {
 .blog-post h2 a {
     color: #333;
     text-decoration: none;
+}
+
+.blog-post h4 {
+    margin: 10px auto;
+}
+
+.blog-post p {
+    margin: 10px;
 }
 
 .blog-post h2 a:hover {
